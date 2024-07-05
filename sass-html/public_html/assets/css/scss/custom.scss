@@ -1,0 +1,13 @@
+$bg-color:red;
+.main-header{
+    width: 100vh;
+    height: auto;
+    background-color: $bg-color;
+    h1{
+        color: white;
+        font: 50px;
+        &:hover{
+            border: 1px solid black;
+        }
+    }
+}

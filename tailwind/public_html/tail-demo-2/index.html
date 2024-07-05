@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tailwind demo</title>
+    <style>
+        .dropdown:hover .dropdown-menu{
+            display: block;
+        }
+    </style>
+    <link rel="stylesheet" href="./assets/public/main.css">
+    
+</head>
+<body>
+    <header class="fixed z-30 w-full">
+        <nav class="flex items-center bg-[#6b925b]">
+            <div class="">
+                <img src="./assets/images/logo.png" alt="logo-img" class="" height="182" width="230">
+            </div>
+            <ul class="flex w-full list-none justify-evenly">
+                <li class="font-semibold text-white uppercase 2xl:text-2xl xl:text-xl lg:text-lg hover:text-black"><a href="#" class="decoration-0 ">Home</a> </li>
+                <div class="relative inline-block dropdown">
+                    <button class="inline-flex items-center text-white uppercase 2xl:text-2xl xl:text-xl lg:text-lg hover:text-black hover:cursor-pointer">
+                      <span class="mr-1">Our Products</span>
+                      <svg class="w-6 h-6 text-white hover:text-black" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                          <path fill-rule="evenodd" d="M19 9l-7 7-7-7" clip-rule="evenodd"></path>
+                      </svg>
+                    </button>
+                    <ul class="absolute hidden w-48 pt-3 text-gray-700 dropdown-menu">
+                      <li><a class="block px-4 py-2 whitespace-no-wrap bg-gray-200 rounded-t hover:bg-gray-400" href="#">Plants Product</a></li>
+                      <li><a class="block px-4 py-2 whitespace-no-wrap bg-gray-200 hover:bg-gray-400" href="#">Herbal Product</a></li>
+                      <li><a class="block px-4 py-2 whitespace-no-wrap bg-gray-200 rounded-b hover:bg-gray-400" href="#">Natural Aloevera</a></li>
+                      <li><a class="block px-4 py-2 whitespace-no-wrap bg-gray-200 rounded-b hover:bg-gray-400" href="#">Green Leaf Gifts</a></li>
+                    </ul>
+                  </div>
+                <li class="font-semibold text-white uppercase 2xl:text-2xl xl:text-xl lg:text-lg hover:text-black"><a href="#" class="decoration-0 ">About Us</a> </li>
+                <li class="font-semibold text-white uppercase 2xl:text-2xl xl:text-xl lg:text-lg hover:text-black"><a href="#" class="decoration-0 ">Pricing</a> </li>
+                <li class="font-semibold text-white uppercase 2xl:text-2xl xl:text-xl lg:text-lg hover:text-black"><a href="#" class="decoration-0 ">Request a Quoto</a> </li>
+                <li class="font-semibold text-white uppercase 2xl:text-2xl xl:text-xl lg:text-lg hover:text-black"><a href="#" class="decoration-0 ">Contact us</a> </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="relative pt-40">
+        <img src="./assets/images/banner.jpg" alt="">
+    </section>
+    <section class="bg-[#e4e4e4]">
+        <div class="container mx-auto">
+            <h2 class="uppercase text-[#6b925b] text-center lg:text-4xl sm:text-2xl pt-10 pb-10">Registeration form</h2>
+        
+        <div class="flex justify-center pb-10">
+            <form action="" class="2xl:w-2/4 sm:w-full">    
+                        <div class="flex gap-5 pt-5mx-auto">
+                            <div class="w-full">
+                                <label for="" class="text-[#010101] text-xl">First Name:</label><br>
+                                <input type="text" class="w-full px-2 py-1">
+                            </div>
+                            <div class="w-full">
+                                <label for="" class="text-[#010101] text-xl">Last Name:</label><br>
+                                <input type="text" class="w-full px-2 py-1">
+                            </div>
+                        </div>
+                        <div class="flex gap-5 pt-5">
+                            <div class="w-full">
+                                <label for="" class="text-[#010101] text-xl">Mobile Number:</label><br>
+                                <input type="text" class="w-full px-2 py-1">
+                            </div>
+                            <div class="w-full">
+                                <label for="" class="text-[#010101] text-xl">Email-ID:</label><br>
+                                <input type="text" class="w-full px-2 py-1">
+                            </div>
+                        </div>
+                        <div class="flex gap-5 pt-5">
+                            <div class="w-full">
+                                <label for="" class="text-[#010101] text-xl">Address:</label><br>
+                                <input type="text" class="w-full px-2 py-1">
+                            </div>
+                            <div class="w-full">
+                                <label for="countries" class="mb-2 text-xl  text-[#010101] dark:text-white">Select City</label>
+                                <select id="countries" class="w-full px-2 py-1 text-gray-900 border border-gray-300 rounded-0 bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                <option value="US">India</option>
+                                <option value="CA">Ahemdabad</option>
+                                <option value="FR">Surat</option>
+                                <option value="DE">Udaipur</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="flex gap-5 pt-5">
+                            <div class="w-full">
+                                <label for="countries" class="mb-2 text-xl text-[#010101] dark:text-white">District</label>
+                                <select id="countries" class="w-full px-2 py-1 text-gray-900 border border-gray-300 rounded-0 bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                    <option value="US">India</option>
+                                    <option value="CA">Ahemdabad</option>
+                                    <option value="FR">Surat</option>
+                                    <option value="DE">Udaipur</option>
+                                </select>
+                            </div>
+                            <div class="w-full">
+                                <label for="countries" class="mb-2 text-xl  text-[#010101] dark:text-white">State</label>
+                                <select id="countries" class="w-full px-2 py-1 text-gray-900 border border-gray-300 rounded-0 bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                                    <option value="US">Gujarat</option>
+                                    <option value="CA">Rajasthan</option>
+                                    <option value="FR">Maharastra</option>
+                                    <option value="DE">delhi</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="flex pt-5 gap-11">
+                            <div class="w-full">
+                                <label for="hobbies" class="text-[#010101] text-xl">Hobbies</label>
+                                        <div class="flex gap-20 pt-3">
+                                            <div class="">
+                                                <input id="default-checkbox crick" type="checkbox" value="Cricket" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                                <label for="default-checkbox crick" class="ml-2 text-xl font-medium text-gray-700 dark:text-gray-300">Cricket</label>
+                                            </div>
+                                            <div>
+                                                <input id="default-checkbox reading" type="checkbox" value="reading" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                                <label for="default-checkbox reading" class="ml-2 text-xl font-medium text-gray-700 dark:text-gray-300">Reading</label>
+                                            </div>
+                                        </div>      
+                                            
+                                        <div class="flex pt-3 gap-[73px]">
+                                                <div>
+                                                    <input id="default-checkbox sing" type="checkbox" value="singing" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                                    <label for="default-checkbox sing" class="ml-2 text-xl font-medium text-gray-700 dark:text-gray-300">Singing</label>
+                                                </div>
+                                                <div>
+                                                    <input id="default-checkbox cock" type="checkbox" value="cocking" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                                    <label for="default-checkbox cock" class="ml-2 text-xl font-medium text-gray-700 dark:text-gray-300">Coocking</label>
+                                                </div>
+                                        </div>
+                            </div>
+                            
+                            <div class="w-full">
+                               <label for="gender" class="text-[#010101] text-xl">Gender</label>
+                                    <div class="flex items-center gap-20 pt-3">
+                                      <div class="mb-[0.125rem] block min-h-[1.5rem] pl-[1.5rem]">
+                                        <input  type="radio" name="gender" id="Male" />
+                                        <label class="mt-px text-xl inline-block pl-[0.15rem] hover:cursor-pointer" for="Male">Male</label>
+                                      </div>
+                                      <div class="mb-[0.125rem] block min-h-[1.5rem] pl-[1.5rem]">
+                                        <input  type="radio" name="gender"id="female" />
+                                        <label class="mt-px text-xl inline-block pl-[0.15rem] hover:cursor-pointer" for="female">Female</label>
+                                      </div>
+                                    </div>
+        
+                            </div>
+                            
+                        </div>   
+                        <div class="flex gap-5 pt-8">
+                            <div class="w-full">
+                                <input type="submit" class="w-full font-semibold hover:text-[#6b925b] hover:bg-white rounded px-10 py-1 bg-[#6b925b] uppercase text-white" value="submit">
+                            </div>
+                            <div class="w-full">
+                                <input type="reset" class="w-full px-10 font-semibold py-1 bg-[#6b925b] hover:text-[#6b925b] hover:bg-white rounded  uppercase text-white" name="Reset" id="reset" value="reset">
+                            </div>
+                        </div>                 
+            </form> 
+        </div>
+        
+    </div>
+    </section>
+    <section class="pt-8 pb-10">
+        <div class="container mx-auto">
+            <h2 class="uppercase text-[#6b925b] text-center text-4xl pt-10 pb-10">OUT PRODUCTS</h2>
+            <div class="flex justify-center pt-9 xl:flex-row lg:flex-wrap sm:flex-col sm:items-center sm:gap-5">
+                <div class="flex justify-center w-1/3">
+                    <div>
+                        <h3 class="uppercase text-[#6b925b] font-semibold text-xl pb-3">lorem ipsum</h3>
+                        <img src="./assets/images/Product img.png" alt="product-img">
+                        <p class="text-[#363361] uppercase font-semibold pt-5">Make your mark with premium business</p>
+                        <ul class="pl-5 list-disc">
+                            <li class="" >Starting at $19.99 for 500</li>
+                            <li>Create in minutes</li>
+                            <li>4-color printing on various types of end</li>
+                            <li>one of both side printing square or rounded</li>
+                            <li>Glossy or matt finish available</li><!--  -->
+                        </ul>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="flex justify-center w-1/3">
+                    <div>
+                        <h3 class="uppercase text-[#6b925b] font-semibold text-xl pb-3">lorem ipsum</h3>
+                        <img src="./assets/images/Product img.png" alt="product-img">
+                        <p class="text-[#363361] uppercase font-semibold pt-5">Make your mark with premium business</p>
+                        <ul class="pl-5 list-disc ">
+                            <li>Starting at $19.99 for 500</li>
+                            <li>Create in minutes</li>
+                            <li>4-color printing on various types of end</li>
+                            <li>one of both side printing square or rounded</li>
+                            <li>Glossy or matt finish available</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <!--  -->
+                <div class="flex justify-center w-1/3">
+                    <div>
+                        <h3 class="uppercase text-[#6b925b] font-semibold text-xl pb-3">lorem ipsum</h3>
+                        <img src="./assets/images/Product img.png" alt="product-img">
+                        <p class="text-[#363361] uppercase font-semibold pt-5">Make your mark with premium business</p>
+                        <ul class="pl-5 list-disc ">
+                            <li>Starting at $19.99 for 500</li>
+                            <li>Create in minutes</li>
+                            <li>4-color printing on various types of end</li>
+                            <li>one of both side printing square or rounded</li>
+                            <li>Glossy or matt finish available</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+            <div class="flex justify-center pt-10">
+                <div class="flex justify-center w-1/3">
+                    <div>
+                        <h3 class="uppercase text-[#6b925b] font-semibold text-xl pb-3">lorem ipsum</h3>
+                        <img src="./assets/images/Product img.png" alt="product-img">
+                        <p class="text-[#363361] uppercase font-semibold pt-5">Make your mark with premium business</p>
+                        <ul class="pl-5 list-disc">
+                            <li>Starting at $19.99 for 500</li>
+                            <li>Create in minutes</li>
+                            <li>4-color printing on various types of end</li>
+                            <li>one of both side printing square or rounded</li>
+                            <li>Glossy or matt finish available</li>
+                        </ul>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="flex justify-center w-1/3">
+                    <div>
+                        <h3 class="uppercase text-[#6b925b] font-semibold text-xl pb-3">lorem ipsum</h3>
+                        <img src="./assets/images/Product img.png" alt="product-img">
+                        <p class="text-[#363361] uppercase font-semibold pt-5">Make your mark with premium business</p>
+                        <ul class="pl-5 list-disc ">
+                            <li>Starting at $19.99 for 500</li>
+                            <li>Create in minutes</li>
+                            <li>4-color printing on various types of end</li>
+                            <li>one of both side printing square or rounded</li>
+                            <li>Glossy or matt finish available</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <!--  -->
+                <div class="flex justify-center w-1/3">
+                    <div>
+                        <h3 class="uppercase text-[#6b925b] font-semibold text-xl pb-3">lorem ipsum</h3>
+                        <img src="./assets/images/Product img.png" alt="product-img">
+                        <p class="text-[#363361] uppercase font-semibold pt-5">Make your mark with premium business</p>
+                        <ul class="pl-5 list-disc ">
+                            <li>Starting at $19.99 for 500</li>
+                            <li>Create in minutes</li>
+                            <li>4-color printing on various types of end</li>
+                            <li>one of both side printing square or rounded</li>
+                            <li>Glossy or matt finish available</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="p-2 pt-10 pb-10 bg-green-100">
+        <div class="container mx-auto">
+            <div class="flex items-center justify-evenly">
+                <div class="border border-green-800 shadow-lg shadow-indigo-500/100">
+                    <img src="./assets/images/logo.png" alt="">
+                </div>
+                <p class="text-2xl font-semibold uppercase shadow-lg shadow-indigo-200/100">Green Wish</p>
+                <ul>
+                    <li class="text-2xl font-semibold list-disc">About us</li>
+                    <li class="font-medium uppercase hover:text-green-700">Help Center</li>
+                    <li class="font-medium uppercase hover:text-green-700">Contact Us </li>
+                    <li class="font-medium uppercase hover:text-green-700">Additional product</li>
+                </ul>
+                <ul>
+                    <li class="text-2xl font-semibold list-disc">Terms & Condition</li>
+                    <li class="font-medium uppercase hover:text-green-700">Editional policy</li>
+                    <li class="font-medium uppercase hover:text-green-700">Terms of Use </li>
+                    <li class="font-medium uppercase hover:text-green-700">About us</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

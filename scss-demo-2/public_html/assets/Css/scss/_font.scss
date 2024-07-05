@@ -1,0 +1,29 @@
+/* font-size */
+
+$fs-12:12px;
+$fs-14:14px;
+$fs-18:18px;
+$fs-20:20px;
+$fs-25:25px;
+$fs-30:30px;
+$fs-32:32px;
+$fs-40:40px;
+$fs-45:45px;
+$fs-48:48px;
+
+/* Google-font */
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans:400italic,700italic,400,700);
+
+@import url(https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Ubuntu:wght@500&display=swap);
+/* font-family */
+$font-family-lato: 'lato',sans-serif;
+$font-family-sans-serif: sans-serif;
+$font-family-arial: Arial;
+$font-family-italic: italic;
+
+/* font weight */
+$fw-300:300;
+$fw-400:400;
+$fw-500:500;
+$fw-700:700;
+$fw-bold:bold;

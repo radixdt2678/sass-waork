@@ -1,0 +1,55 @@
+  @import 'font';
+  @include cols();
+
+$border: 1px solid;
+  $border-width:1px;
+  $border-widths: (
+    1: 1px,
+    2: 2px,
+    3: 3px,
+    4: 4px,
+    5: 5px
+  );
+  $border-style:solid;
+  /*  */
+  $none:none;
+$font-style:normal;
+$h-1:100%;
+$d-flex: flex;
+$object-fir-cover:cover;
+$justify-content-center:center;
+$flex-direction:column;
+$text-center: center;
+
+$w-50:50%;
+$w-25:25%;
+$w-75:75%;
+$p-1:10px;
+$p-2:20px;
+$p-3:30px;
+$p-4:40px;
+$p-5:50px;
+/*  */
+
+/*  */
+.border{border: $border;}
+.text-decoration-none{text-decoration: none;}
+.object-fit-cover{object-fit: $object-fir-cover;}
+
+.font-normal{font-style: $font-style;}
+.flex-column{flex-direction: $flex-direction;}
+.d-flex{display: $d-flex;}
+.justify-content-center{justify-content: $justify-content-center;}
+.gap-5{gap: 50px;}
+.gap-3{gap: 30px;}
+.mx-auto{margin: 0 auto;}
+.text-center{text-align: $text-center;}
+
+.h-1{height: $h-1;}
+.w-100{width: 100%;}
+.w-50{width: $w-50;}
+.w-75{width: $w-75;}
+.w-25{width: $w-25;}
+
+/* .fw-7{font-weight: $fw-700;}
+.fw-1{font-weight: $fw-400;} */

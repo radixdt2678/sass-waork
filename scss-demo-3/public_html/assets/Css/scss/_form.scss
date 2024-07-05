@@ -1,0 +1,54 @@
+@import 'mixin';
+@import 'color';
+
+form{
+    max-width: 850px;
+    padding: 50px 20px;
+}
+.input {
+    width: 366px;
+    border: 1px solid #CFCFCF;
+    padding: 10px;
+    margin-bottom: 15px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 11px rgb(137 137 137 / 15%);
+    margin-top: 10px;
+    @include lg{
+        width: -webkit-fill-available;
+    }
+}
+.input2 {
+    width: 92%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #CFCFCF;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 11px rgb(137 137 137 / 15%);
+    margin-top: 10px;
+    @include lg{ 
+            width: -webkit-fill-available;
+    }
+    @include md {
+        align-items: center;
+    }
+}
+.input3 {
+    width: 388px;
+    padding: 10px;
+    border: 1px solid #CFCFCF;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 11px rgb(137 137 137 / 15%);
+    margin-top: 10px;
+    @include lg {
+        width: -webkit-fill-available;
+    }
+}
+.input4 {
+    font-size: 15px;
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+input {
+    margin-bottom: 25px;
+}

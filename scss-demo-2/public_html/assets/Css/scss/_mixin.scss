@@ -1,0 +1,45 @@
+@import 'responsive';
+
+// Small devices
+@mixin xsm {
+    @media (min-width: #{$screen-xsm-max}) {
+        @content;
+    }
+ }
+@mixin sm {
+    @media (min-width: #{$screen-sm-max}) {
+        @content;
+    }
+ }
+ 
+ // Medium devices
+ @mixin md {
+    @media (min-width: #{$screen-md-max}) {
+        @content;
+    }
+ }
+ 
+ // Large devices
+ @mixin lg {
+    @media (min-width: #{$screen-lg-max}) {
+        @content;
+    }
+ }
+ //
+ @mixin xlg {
+    @media (min-width: #{$screen-x-lg-max}) {
+        @content;
+    }
+ }
+ // Extra large devices
+ @mixin xl {
+    @media (min-width: #{$screen-xl-max}) {
+        @content;
+    }
+ }
+ //
+ @mixin xxl {
+    @media (min-width: #{$screen-xxl-max}) {
+        @content;
+    }
+ }

@@ -1,0 +1,424 @@
+@import 'mixin' ;
+@import 'variable';
+@import 'form';
+@import 'table';
+@import 'font';
+@import 'color';
+@import 'container';
+
+@include font-face("Lato",".Lato-Regular","Lato");
+@include font-size();
+body{
+    margin: 0;
+    font-family:$font-family-arial;
+}
+.container, .nav-container {
+    max-width: $container;
+    margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+.section-container{
+    max-width: $section-container;
+    margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+/* Navigation */
+.navigation{
+    position: fixed; 
+    top: 0;
+    width: 100%;
+    z-index: 9;
+}
+
+#check{display: none;}
+
+.fa-btn{
+    display: none;
+    @include lg{
+        display: block; 
+        font-size:$fs-20;
+        padding: 20px; 
+        z-index: 9999999;
+    }
+    @include xsm {
+        padding: 10px;;
+    }
+}
+.nav-bar{ 
+    display: flex;
+    align-items: center; 
+}
+
+.navigation {
+  background: $bg-primary;
+  @include lg{
+    #check:checked ~ nav{transform: translateY(0);}
+    }
+}
+
+
+.logo {
+    height: 70px;
+    width: 138px;
+    padding: 10px ;
+    .ban-img1{
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+}
+nav {
+    
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    @include lg{
+        position: absolute; width: 100%;top: 0;left: 0;height: 100vh;transform: translateY(-100%);text-align: center; transition: all .5s; padding: 0; z-index: 999;background-color: #d4d4d4;
+    }
+    @include lg{ 
+        padding: 0px 30px;
+        .nav-list{
+            gap: 10px 30px;
+        }
+    }   
+    @include xlg{
+        padding: 0px 40px;
+    }
+        .nav-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 10px 50px;
+        align-items: center;
+        transform: translateY(50% , -50%);
+            .nav-link{text-decoration: none;
+                        color: $text-dark;
+                        &.active,:hover{
+                            color: red;border-bottom: 1px solid $scondary;
+                        }&:hover{
+                            color: $scondary;
+                            border-bottom:1px solid $scondary;
+                        }
+                        @include md{ border-bottom :1px solid #faf5e4; font-size: $fs-20; color: #292929;}  
+                }
+                @include lg{
+                    display: flex; flex-direction: column; padding-top: 50px; color: #292929; z-index: 9; cursor: pointer; align-items: baseline;
+                }
+        } 
+}
+.search-in{
+    margin-left: auto;
+    width: auto;
+    display: flex;
+    align-items: center; 
+    @include sm {
+        margin-left: 30px;
+    }
+    @include xsm {
+    margin-left: unset;
+    }
+    .btn-1{font-family: 'lato',sans-serif; font-size: $fs-18; background-color: #000000; color: white; border-radius: 50px; padding: 10px;
+        &:hover{background-color: white; color: #000000;}
+        @include xl {
+            font-size: $fs-16;
+        }
+        @include xsm {
+        font-size: $fs-14;
+    }
+    }
+}
+
+/*  */
+
+/*---------------------------------------- banner-Section ------------------------------------------------------------------------*/
+
+.head-b{
+    font-size: $fs-52;
+    color: #572B39; 
+    font-family: $font-family-arial;
+    h1{
+        margin: 0;
+    }
+    @include xxl {
+        font-size: $fs-48;
+    } 
+    @include xl {
+        font-size: $fs-40;
+    }
+    @include xlg{
+        font-size: $fs-32;
+    }
+    @include lg{
+        font-size: $fs-30;
+    }
+    @include md{
+        font-size: $fs-25;
+    }
+    @include sm{
+        font-size: $fs-20;
+    }
+    }
+.para-b{font-family: $font-family-arial;
+    font-size: $fs-20;
+    width: 50%;
+    @include lg {
+        width: 100%;
+    }    
+}
+.btn{font-family: 'lato', sans-serif; font-size: $fs-18; background-color: #000000; color: white; border-radius: 50px; padding: 10px;
+    &:hover{background-color: white; color: #000000;}
+
+    @include xsm {
+    font-size: $fs-14;
+}
+}
+
+/* --------------------------------card-section ---------------------------------------------------------------------------------------------------*/
+.aside-container{
+    max-width: 1520px;
+    margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    .aside{
+    width:1320px;
+    background-color: #FFF4EF;
+    align-items: center;
+    margin-left: 0;
+        @include xl {
+            width: unset;
+        }
+        @include md{
+            flex-direction: column;
+        }
+    }
+    .aside2{
+        width:1320px;
+        align-items: center;
+        margin-left: auto;
+        background-color: #FFF4EF;
+        @include xl {
+            width: unset;
+        }
+        @include md{
+            flex-direction: column-reverse;
+        }
+    }
+}
+
+.aside-img{
+    width: 50%;
+    @include md{
+        width: 100%;
+    }
+}
+.aside-content{
+    width: 50%;
+    max-width: 400px;
+    margin: 0 auto;
+    @include md{
+        width: 100%;   
+    }
+    h4{
+        font-size: $fs-32;
+        font-family: $font-family-arial;
+        color: #572B39;
+        @include lg {
+            font-size: $fs-25;
+        }
+        @include sm {
+            font-size: $fs-20;
+            padding: 10px;
+        }
+        @include xsm {
+            font-size: $fs-18;
+            
+        }
+    }
+    p{
+        font-size: $fs-20;
+        font-family: $font-family-arial;
+        @include lg {
+            font-size: $fs-18;
+        }
+        @include sm {
+            font-size: $fs-16;
+        }
+        @include xsm {
+            font-size: $fs-14;
+            padding: 12px;
+        }
+    }
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------- */
+.crd-h{
+    font-size: $fs-48;
+    color: #572B39; 
+    font-family: $font-family-arial;
+    h2{
+        margin: 0;
+    }
+    @include xxl {
+        font-size: $fs-40;
+    } 
+    @include xl {
+        font-size: $fs-32;
+    }
+    @include xlg{
+        font-size: $fs-30;
+    }
+    @include lg{
+        font-size: $fs-30;
+    }
+    @include md{
+        font-size: $fs-25;
+    }
+    @include sm{
+        font-size: $fs-20;
+    }
+}
+.crd-c{
+    font-size: $fs-20;
+    font-family: $font-family-arial;
+    @include lg {
+        font-size: $fs-18;
+    }
+}
+.crd {
+    justify-content: center;
+    @include md {
+        flex-wrap: wrap;
+    }
+    p{
+        font-size: $fs-20;
+        font-family: $font-family-arial;
+        @include lg {
+            padding-top: unset;
+            font-size: $fs-18;
+        }
+       
+    }
+}
+.card{
+    @include xlg{
+        padding: 30px;
+    }
+    @include lg{
+        padding: 20px;
+    }
+}
+/* -------------------------------------------------Contact---------------------------------------------------------------------- */
+
+.contact-bg{background-color:#EBDAD7;}
+.contact{width: 800px; align-items: center; justify-content: space-between; cursor: pointer; margin: 0 auto;
+    @include md{
+        width: unset;
+    }
+    @include sm {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+}
+.con-icn{
+    background-color: #000000;
+    border-radius: 50%;
+    padding: 10px;
+    color: white;
+}
+/* -------------------------------footer------------------------------------------------------------------------------------- */
+footer{background-color: #FFF4EF;}
+.foter{
+    @include md {
+        flex-direction: column;
+    }
+}
+.iframes{
+    @include md{
+        width: 100%;
+    }
+}
+.f-h{
+    color: #572B39;
+    font-size: $fs-22;   
+    line-height: 28px;
+    @include xlg{
+        font-size: $fs-20;
+    }
+    @include xsm {
+        font-size: $fs-18;
+    }
+}
+.f-p{
+    font-size: $fs-16;
+    font-family: $font-family-arial;
+    line-height: 28px;
+}
+.sign-f{
+    font-size: $fs-16;
+    font-family: $font-family-arial;
+    color: #572B39;
+    cursor: pointer;
+}
+.input-group { 
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+    input{width: 60%; 
+    padding: 10px;
+        @include xl
+        {
+            width: 50%;
+        }
+        @include xlg{
+            width: 40%;
+        }
+    }
+}
+.input-group-text {
+    display: flex;
+    align-items: center;
+    padding: 0.375rem 0.75rem;
+    margin-bottom: 0;
+    font-size: $fs-16;
+    text-transform: uppercase;
+    line-height: 1.6;
+    color: white;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #000000;
+    border: 1px solid #ced4da;
+    border-radius: 0;
+    text-decoration: none;
+    &:hover{
+        background-color: white;
+        color: #000000;
+    }
+}
+.ul-f{
+    li{
+        font-size: $fs-20;
+        line-height: 35px;
+        font-family: $font-family-arial;
+        @include xlg{
+            font-size: $fs-18;
+        }
+        @include xsm {
+            font-size: $fs-16;
+        }
+    }
+}
+.fot{
+    @include lg {
+        padding: unset;
+    }
+    @include md {
+        width: 100%;
+    }
+}

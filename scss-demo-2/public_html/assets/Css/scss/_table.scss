@@ -1,0 +1,21 @@
+@import 'color';
+
+table {
+    border-collapse: collapse;
+    border: none;
+    background: $text-light;
+    box-shadow: 0px 4px 15px rgb(44 44 44 / 10%);
+}
+tr {
+    border-bottom: none;
+    th {
+        background: #3092F9;
+        color: #F9F9F9;
+        font-size: 22px;
+    }
+    th, td {
+        padding: 10px;
+        border: none;
+    }
+}
+

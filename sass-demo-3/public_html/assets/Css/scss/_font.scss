@@ -1,0 +1,82 @@
+
+.fw-100 {
+    @include font-weight(thin);
+    @include font-weight(hairline);
+  }
+  
+.fw-200 {
+    @include font-weight(extra light);
+    @include font-weight(extralight);
+    @include font-weight(ultra light);
+    @include font-weight(ultralight);
+  }
+  
+.fw-300 {
+    @include font-weight(light);
+    @include font-weight(book);
+    @include font-weight(demi);
+  }
+  
+.fw-400 {
+    @include font-weight(normal);
+    @include font-weight(regular);
+  }
+  
+.fw-500 {
+    @include font-weight(medium);
+  }
+  
+.fw-600 {
+    @include font-weight(semi bold);
+    @include font-weight(semibold);
+    @include font-weight(demi bold);
+    @include font-weight(demibold);
+  }
+  
+.fw-700 {
+    @include font-weight(bold);
+  }
+  
+.fw-800 {
+    @include font-weight(extra bold);
+    @include font-weight(extrabold);
+    @include font-weight(ultra bold);
+    @include font-weight(ultrabold);
+  }
+  
+.fw-900 {
+    @include font-weight(black);
+    @include font-weight(heavy);
+    @include font-weight(fat);
+    @include font-weight(poster);
+    @include font-weight(extra black);
+    @include font-weight(extrablack);
+    @include font-weight(ultra black);
+    @include font-weight(ultrablack);
+  }
+
+$fs-12:12px;
+$fs-14:14px;
+$fs-16:16px;
+$fs-18:18px;
+$fs-20:20px;
+$fs-22:22px;
+$fs-25:25px;
+$fs-30:30px;
+$fs-32:32px;
+$fs-40:40px;
+$fs-45:45px;
+$fs-48:48px;
+$fs-52:52px;
+
+
+
+$font-family-arial: Arial;
+/* $font-family-italic: italic; */
+
+/* font weight */
+/* $fw-300:300;
+$fw-400:400;
+$fw-500:500;
+$fw-700:700;
+$fw-bold:bold; */

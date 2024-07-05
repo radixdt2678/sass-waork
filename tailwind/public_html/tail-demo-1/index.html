@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html x-data="{ dark:false }" :class="dark ? 'dark' : '' " lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind demo</title>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="./assets/public/main.css">
+</head>
+<body class="dark:bg-gray-500">
+    <header class="fixed z-30 w-full p-5 bg-white">
+        <div class="container mx-auto">
+            <nav class="flex items-center justify-between">
+                <div class="ml-0">
+                    <img src="./assets/image/logo.png" alt="logo" class="">
+                </div>
+            
+                <ul class="flex gap-10">
+                    <li class="p-1 text-xl font-semibold uppercase hover:outline text-violet-600 hover:text-violet-600 active:text-violet-600"><a href="/">home</a></li>
+                    <li class="p-1 text-xl font-semibold uppercase hover:outline text-violet-500 hover:text-violet-700"><a href="/">shop</a></li>
+                    <li class="p-1 text-xl font-semibold uppercase hover:outline text-violet-500 hover:text-violet-700"><a href="/">pages</a></li>
+                    <li class="p-1 text-xl font-semibold uppercase hover:outline text-violet-500 hover:text-violet-700"><a href="/">about</a></li>
+                </ul>
+                <label class="switch" >
+                    <input type="checkbox" @click="dark = !dark">
+                    <span class="slider"></span>
+                </label>
+                <!-- <button  class="p-2 text-white bg-gray-400 rounded hover:bg-gray-600">Toogle Button</button> -->
+            </nav>
+        </div>
+    </header>
+    <section class="relative mt-100 ">
+        <div class="container mx-auto">
+            <img src="./assets/image/sec-3.png" alt="banner-img" class="object-cover w-full">
+        </div>
+    </section>
+    <section class="mt-10 ">
+        <div class="container mx-auto">
+            <div class="flex align-middle">
+                <div class="w-2/4">
+                    <img src="./assets/image/aside-1.png" alt="aside-img" class="object-cover w-full">
+                </div>
+                <div class="flex items-center w-2/4 p-5 bg-slate-200 ">
+                        <div>
+                            <h2 class="text-5xl dark:text-red-500">Lorem Ipsum</h2>
+                            <p class="pt-5 dark:text-violet-500 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem laborum ut, rem beatae quisquam nam? Eveniet, maxime sunt. Mollitia optio corrupti velit nam dicta. Molestiae corporis nobis in consequatur architecto!</p>
+                        </div>
+                </div>
+                    
+            </div>
+        </div>
+    </section>
+    <section class="pb-10 mt-10 ">
+        <div class="container mx-auto">
+            <div class="flex gap-10 pt-5 justify-evenly">
+                <div class="p-10 border rounded-lg">
+                    <div class="pt-10">
+                        <img src="./assets/image/ic1.png" alt="" class="mx-auto">
+                    </div>
+                    <div class="text-center">
+                        <h3 class="pt-10 text-2xl dark:text-white">Pecel lele</h3>
+                        <p class="pt-5 dark:text-white">
+                        Lorem ipsum elit. Non reiciendis vero quibusdam
+                        exercitationem. Iure rem error quas, soluta ipsum possimus
+                        inventore esse culpa eum?
+                        </p>
+                    </div>
+                </div>
+                <div class="p-5 border rounded-lg">
+                    <div class="pt-10">
+                        <img src="./assets/image/ic3.png" alt="" class="mx-auto">
+                    </div>
+                    <div class="text-center">
+                        <h3 class="pt-10 text-2xl dark:text-white">Pecel lele</h3>
+                        <p class="pt-5 dark:text-white">
+                        Lorem ipsum elit. Non reiciendis vero quibusdam
+                        exercitationem. Iure rem error quas, soluta ipsum possimus
+                        inventore esse culpa eum?
+                        </p>
+                    </div>
+                </div>
+                <div class="p-5 border rounded-lg">
+                    <div class="pt-10">
+                        <img src="./assets/image/ic2.png" alt="" class="mx-auto">
+                    </div>
+                    <div class="text-center">
+                        <h3 class="pt-10 text-2xl dark:text-white">Pecel lele</h3>
+                        <p class="pt-5 dark:text-white">
+                        Lorem ipsum elit. Non reiciendis vero quibusdam
+                        exercitationem. Iure rem error quas, soluta ipsum possimus
+                        inventore esse culpa eum?
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="pb-10 ">
+        <div class="container mx-auto">
+            <div class="">
+                <div class="flex gap-5">
+                    <div class="w-2/4">
+                        <img src="./assets/image/aside-2.png" alt="" class="object-cover w-full">
+                    </div>
+                    <div class="w-2/4">
+                        <img src="./assets/image/aside--22.png" alt="" class="object-cover w-full">
+                        <div class="flex items-center h-64 p-11 bg-slate-200">
+                            <p class="text-xl text-red-800 ">Lorem ipsum dolor,  adipisicing elit. Quisquam, repellat. Eum quasi nobis optio dolores vitae cumque repellat, amet magnam non, qui neque nam maxime recusandae laudantium ullam, doloribus similique?</p>
+                        </div>      
+                    </div>
+                </div>
+                <div class="flex gap-5 pt-5">
+                    <div class="w-2/4">
+                        <img src="./assets/image/aide-1.png" alt="" class="object-cover w-full">
+                        <div class="flex items-center h-64 p-11 bg-slate-200">
+                            <p class="text-xl text-red-800 ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam, repellat. Eum quasi nobis optio dolores vitae cumque repellat, amet magnam non, qui neque nam maxime recusandae laudantium ullam, doloribus similique?</p>
+                        </div>
+                    </div>
+                    <div class="w-2/4">
+                        <img src="./assets/image/aside-1.png" alt="" class="object-cover w-full">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="pt-8 pb-8 bg-slate-200">
+        <div class="container mx-auto">
+            <div class="flex">
+                <div class="w-2/4">
+                    <img src="./assets/image/foter.png"  alt="footer-img">
+                    <p class="pt-5 text-lg ">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical, May one Which life divide sea.</p>
+                    <div class="flex w-full gap-2 pt-5">
+                        <input id="newsletter1" type="text" class="p-3" placeholder="Enter your Email id">
+                        <button class="p-2 text-xl font-semibold uppercase bg-sky-500 hover:bg-sky-800 hover:text-white" type="button">Subscribe</button>
+                    </div>
+                </div>
+                <div class="w-2/4">
+                    <div>
+                        <div class="flex justify-evenly">
+                            <div>
+                                <img src="./assets/image/insta-1.png" alt="">
+                            </div>
+                            <div>
+                                <img src="./assets/image/insta-2.png" alt="">
+                            </div>
+                            <div>
+                                <img src="./assets/image/insta-3.png" alt="">
+                            </div>
+                        </div>
+                        <div class="flex pt-5 justify-evenly">
+                            <div>
+                                <img src="./assets/image/insta-4.png" alt="">
+                            </div>
+                                <img src="./assets/image/insta-5.png" alt="">
+                            <div>
+                                <img src="./assets/image/insta-6.png" alt="">
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                </div>
+                <div class="">
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
