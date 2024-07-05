@@ -1,0 +1,240 @@
+html {
+  h1,
+  .h1,
+  h1 > strong {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: #1f1f1f;
+  }
+
+  h2,
+  .h2 {
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    color: #1f1f1f;
+  }
+
+  h3,
+  .h3 {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+  h3,
+  .h3 {
+    color: #1f1f1f;
+    &:not(.customColor) {
+      color: #1f1f1f;
+    }
+  }
+  h4,
+  .h4 {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    color: #1f1f1f;
+  }
+  h5,
+  .h5 {
+    font-size: calc(1rem + 0.5vw);
+    line-height: calc(1.125rem + 0.8vw);
+    color: #1f1f1f;
+  }
+
+  h6,
+  .h6 {
+    font-size: calc(1rem + 1vw);
+    line-height: calc(1.125rem + 1.8vw);
+    color: #1f1f1f;
+  }
+
+  p,
+  ul,
+  .para {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #363636;
+  }
+
+  .para-lg > p,
+  .para-lg,
+  .para-lg li {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: #363636;
+  }
+
+  .para-xl > p,
+  .para-xl {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  @media (min-width: 768px) {
+    h1,
+    .h1,
+    h1 > span,
+    h1 > strong {
+      font-size: 2.5rem;
+      line-height: 3.5rem;
+    }
+
+    h2,
+    .h2 {
+      font-size: 2rem;
+      line-height: 2.75rem;
+    }
+
+    h3,
+    .h3 {
+      font-size: 1.5rem;
+      line-height: 2.25rem;
+    }
+
+    h4,
+    .h4 {
+      font-size: 1.125rem;
+      line-height: 1.75rem;
+    }
+
+    h5,
+    .h5 {
+      font-size: 1.25rem;
+      line-height: 2rem;
+    }
+
+    h6,
+    .h6 {
+      font-size: 1.375rem;
+      line-height: 2.25rem;
+    }
+
+    .para-lg > p,
+    .para-lg,
+    .para-lg li {
+      font-size: 1rem;
+      line-height: 1.5rem;
+    }
+
+    .para-xl > p,
+    .para-xl {
+      font-size: 1rem;
+      line-height: 1.5rem;
+    }
+  }
+  @media (min-width: 1280px) {
+    h1,
+    .h1 h1 > span,
+    h1 > strong {
+      font-size: 2.5rem;
+      line-height: 3.5rem;
+    }
+
+    h2,
+    .h2 {
+      font-size: 1.875rem;
+      line-height: 2.5rem;
+    }
+
+    h3,
+    .h3 {
+      font-size: 1.5rem;
+      line-height: 1.875rem;
+    }
+
+    h4,
+    .h4,
+    .h4 > p {
+      font-size: 1rem;
+      line-height: 1.75rem;
+    }
+
+    h5,
+    .h5 {
+      font-size: 1rem;
+      line-height: 2rem;
+    }
+
+    h6,
+    .h6 {
+      font-size: 1.125rem;
+      line-height: 2.25rem;
+    }
+    p,
+    ul,
+    .para {
+      font-size: 0.8125rem;
+      line-height: 1.5rem;
+      color: #363636;
+    }
+    .para-lg > p,
+    .para-lg,
+    .para-lg li {
+      font-size: 0.8125rem;
+      line-height: 1.5rem;
+    }
+
+    .para-xl > p,
+    .para-xl {
+      font-size: 0.8125rem;
+      line-height: 1.5rem;
+    }
+  }
+  @media (min-width: 1600px) {
+    h1,
+    .h1,
+    h1 > span,
+    h1 > strong {
+      font-size: 3.125rem;
+      line-height: 4rem;
+    }
+
+    h2,
+    .h2 {
+      font-size: 2.5rem;
+      line-height: 3.5rem;
+    }
+
+    h3,
+    .h3 {
+      font-size: 2rem;
+      line-height: 3rem;
+    }
+
+    h4,
+    .h4,
+    .h4 > p {
+      font-size: 1.5rem;
+      line-height: 2.25rem;
+      // margin-top: 0;
+    }
+
+    h5,
+    .h5 {
+      font-size: 1.375rem;
+      line-height: 2.125rem;
+      // margin-top: 0;
+    }
+
+    h6,
+    .h6 {
+      font-size: 1.125rem;
+      line-height: 1.75rem;
+    }
+
+    p,
+    ul {
+      font-size: 1.125rem;
+      line-height: 1.875rem;
+    }
+    .para-lg > p,
+    .para-lg,
+    .para-lg li {
+      font-size: 1.5rem;
+      line-height: 2.25rem;
+    }
+    .para-xl > p,
+    .para-xl {
+      font-size: 1.125rem;
+      line-height: 1.875rem;
+    }
+  }
+}
